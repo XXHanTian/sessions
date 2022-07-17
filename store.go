@@ -51,7 +51,7 @@ func NewCookieStore(keyPairs ...[]byte) *CookieStore {
 		Codecs: securecookie.CodecsFromPairs(keyPairs...),
 		Options: &Options{
 			Path:   "/",
-			MaxAge: 86400 * 30,
+			MaxAge: 86400 * 365,
 		},
 	}
 
